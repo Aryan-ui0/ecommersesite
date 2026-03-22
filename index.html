@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURA — Elevated Living</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-text">AURA</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">AURA</div>
+    <ul class="nav-links">
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#featured">Featured</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-icon" aria-label="Search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </button>
+      <button class="nav-icon cart-btn" aria-label="Cart">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <div class="hero-grain"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-text">New Collection — SS 2025</p>
+      <h1 class="hero-title">
+        <span class="line">Crafted for</span>
+        <span class="line italic">those who</span>
+        <span class="line">notice everything.</span>
+      </h1>
+      <p class="hero-sub reveal-text">Objects of desire. Heirlooms in waiting.</p>
+      <div class="hero-cta reveal-text">
+        <a href="#collections" class="btn-primary">Explore Collection</a>
+        <a href="#featured" class="btn-ghost">View Lookbook</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-badge">
+      <div class="badge-ring">
+        <svg viewBox="0 0 200 200" class="badge-svg">
+          <path id="badgePath" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/>
+          <text>
+            <textPath href="#badgePath">AURA STUDIO • EST. 2019 • ELEVATED LIVING •</textPath>
+          </text>
+        </svg>
+        <div class="badge-center">✦</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>Free shipping on orders over ₹4999</span>
+        <span class="dot">✦</span>
+        <span>Artisan crafted since 2019</span>
+        <span class="dot">✦</span>
+        <span>30-day returns</span>
+        <span class="dot">✦</span>
+        <span>Sustainable materials</span>
+        <span class="dot">✦</span>
+        <span>Free shipping on orders over ₹4999</span>
+        <span class="dot">✦</span>
+        <span>Artisan crafted since 2019</span>
+        <span class="dot">✦</span>
+        <span>30-day returns</span>
+        <span class="dot">✦</span>
+        <span>Sustainable materials</span>
+        <span class="dot">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Collections -->
+  <section class="collections" id="collections">
+    <div class="section-header">
+      <p class="section-eyebrow">Curated for you</p>
+      <h2 class="section-title">Collections</h2>
+    </div>
+    <div class="collections-grid">
+      <div class="collection-card large" data-hover="Living">
+        <div class="card-img-wrap">
+          <div class="card-img" style="background: linear-gradient(135deg, #c8b89a 0%, #8c7355 100%);">
+            <div class="card-shape s1"></div>
+            <div class="card-shape s2"></div>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Living Spaces</h3>
+          <p>48 objects</p>
+        </div>
+        <a href="#featured" class="card-overlay">
+          <span>Explore →</span>
+        </a>
+      </div>
+      <div class="collection-card" data-hover="Ceramic">
+        <div class="card-img-wrap">
+          <div class="card-img" style="background: linear-gradient(135deg, #e8d5c4 0%, #b89880 100%);">
+            <div class="card-shape s3"></div>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Ceramics</h3>
+          <p>22 objects</p>
+        </div>
+        <a href="#featured" class="card-overlay"><span>Explore →</span></a>
+      </div>
+      <div class="collection-card" data-hover="Textile">
+        <div class="card-img-wrap">
+          <div class="card-img" style="background: linear-gradient(135deg, #a89070 0%, #6b5040 100%);">
+            <div class="card-shape s4"></div>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Textiles</h3>
+          <p>35 objects</p>
+        </div>
+        <a href="#featured" class="card-overlay"><span>Explore →</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="featured" id="featured">
+    <div class="section-header">
+      <p class="section-eyebrow">Hand-selected</p>
+      <h2 class="section-title">Featured Pieces</h2>
+    </div>
+    <div class="products-grid">
+
+      <div class="product-card" data-id="1" data-name="Wabi Vase No. 3" data-price="3200">
+        <div class="product-img-wrap">
+          <div class="product-img" style="background: linear-gradient(160deg, #d4c5b0 30%, #9c8060 100%);">
+            <div class="prod-shape ps1"></div>
+          </div>
+          <div class="product-overlay">
+            <button class="quick-add" data-id="1" data-name="Wabi Vase No. 3" data-price="3200">Quick Add</button>
+          </div>
+          <div class="product-badge">New</div>
+        </div>
+        <div class="product-info">
+          <div class="product-meta">
+            <h3>Wabi Vase No. 3</h3>
+            <span class="product-tag">Ceramics</span>
+          </div>
+          <div class="product-footer">
+            <span class="price">₹3,200</span>
+            <button class="wishlist-btn" aria-label="Wishlist">♡</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-id="2" data-name="Linen Cloud Throw" data-price="5800">
+        <div class="product-img-wrap">
+          <div class="product-img" style="background: linear-gradient(160deg, #e8e0d4 30%, #c4b09a 100%);">
+            <div class="prod-shape ps2"></div>
+          </div>
+          <div class="product-overlay">
+            <button class="quick-add" data-id="2" data-name="Linen Cloud Throw" data-price="5800">Quick Add</button>
+          </div>
+          <div class="product-badge bestseller">Bestseller</div>
+        </div>
+        <div class="product-info">
+          <div class="product-meta">
+            <h3>Linen Cloud Throw</h3>
+            <span class="product-tag">Textiles</span>
+          </div>
+          <div class="product-footer">
+            <span class="price">₹5,800</span>
+            <button class="wishlist-btn" aria-label="Wishlist">♡</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-id="3" data-name="Obsidian Candle Set" data-price="2100">
+        <div class="product-img-wrap">
+          <div class="product-img" style="background: linear-gradient(160deg, #4a3f35 30%, #1e1810 100%);">
+            <div class="prod-shape ps3"></div>
+          </div>
+          <div class="product-overlay">
+            <button class="quick-add" data-id="3" data-name="Obsidian Candle Set" data-price="2100">Quick Add</button>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-meta">
+            <h3>Obsidian Candle Set</h3>
+            <span class="product-tag">Living</span>
+          </div>
+          <div class="product-footer">
+            <span class="price">₹2,100</span>
+            <button class="wishlist-btn" aria-label="Wishlist">♡</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-id="4" data-name="River Stone Tray" data-price="1850">
+        <div class="product-img-wrap">
+          <div class="product-img" style="background: linear-gradient(160deg, #b5a898 30%, #7a6b5d 100%);">
+            <div class="prod-shape ps4"></div>
+          </div>
+          <div class="product-overlay">
+            <button class="quick-add" data-id="4" data-name="River Stone Tray" data-price="1850">Quick Add</button>
+          </div>
+          <div class="product-badge sale">−20%</div>
+        </div>
+        <div class="product-info">
+          <div class="product-meta">
+            <h3>River Stone Tray</h3>
+            <span class="product-tag">Living</span>
+          </div>
+          <div class="product-footer">
+            <span class="price">₹1,850</span>
+            <span class="price-old">₹2,300</span>
+            <button class="wishlist-btn" aria-label="Wishlist">♡</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-id="5" data-name="Earth Bowl Set" data-price="4400">
+        <div class="product-img-wrap">
+          <div class="product-img" style="background: linear-gradient(160deg, #c09070 30%, #7a5040 100%);">
+            <div class="prod-shape ps5"></div>
+          </div>
+          <div class="product-overlay">
+            <button class="quick-add" data-id="5" data-name="Earth Bowl Set" data-price="4400">Quick Add</button>
+          </div>
+          <div class="product-badge">New</div>
+        </div>
+        <div class="product-info">
+          <div class="product-meta">
+            <h3>Earth Bowl Set</h3>
+            <span class="product-tag">Ceramics</span>
+          </div>
+          <div class="product-footer">
+            <span class="price">₹4,400</span>
+            <button class="wishlist-btn" aria-label="Wishlist">♡</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-id="6" data-name="Moss Wall Panel" data-price="8900">
+        <div class="product-img-wrap">
+          <div class="product-img" style="background: linear-gradient(160deg, #6b7c5a 30%, #3a4a2e 100%);">
+            <div class="prod-shape ps6"></div>
+          </div>
+          <div class="product-overlay">
+            <button class="quick-add" data-id="6" data-name="Moss Wall Panel" data-price="8900">Quick Add</button>
+          </div>
+          <div class="product-badge bestseller">Bestseller</div>
+        </div>
+        <div class="product-info">
+          <div class="product-meta">
+            <h3>Moss Wall Panel</h3>
+            <span class="product-tag">Living</span>
+          </div>
+          <div class="product-footer">
+            <span class="price">₹8,900</span>
+            <button class="wishlist-btn" aria-label="Wishlist">♡</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Banner -->
+  <section class="banner" id="about">
+    <div class="banner-bg">
+      <div class="banner-orb"></div>
+    </div>
+    <div class="banner-content">
+      <p class="banner-eyebrow">Our Philosophy</p>
+      <h2 class="banner-title">Objects that<br /><em>outlast trends.</em></h2>
+      <p class="banner-body">We believe your home should tell a story — of careful consideration, of things chosen slowly, of beauty that doesn't shout. Each piece in the AURA collection is sourced from independent artisans who share this belief.</p>
+      <a href="#collections" class="btn-primary light">Discover the Story</a>
+    </div>
+    <div class="banner-visual">
+      <div class="visual-ring r1"></div>
+      <div class="visual-ring r2"></div>
+      <div class="visual-ring r3"></div>
+      <div class="visual-center">✦</div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="stat">
+      <span class="stat-num" data-target="4800">0</span>
+      <span class="stat-plus">+</span>
+      <p>Happy Customers</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num" data-target="200">0</span>
+      <span class="stat-plus">+</span>
+      <p>Curated Objects</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num" data-target="85">0</span>
+      <span class="stat-plus">+</span>
+      <p>Artisan Partners</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num" data-target="6">0</span>
+      <span class="stat-plus">+</span>
+      <p>Years of Curation</p>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="newsletter-inner">
+      <p class="section-eyebrow">Stay in the loop</p>
+      <h2>The AURA Edit</h2>
+      <p class="newsletter-sub">Monthly drops, artisan stories, and objects worth waiting for. No noise — just beauty.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="your@email.com" class="email-input" />
+        <button class="btn-primary subscribe-btn">Subscribe</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">AURA</div>
+        <p>Elevated living through<br />considered objects.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Ceramics</a></li>
+            <li><a href="#">Textiles</a></li>
+            <li><a href="#">Living</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Artisans</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Care Guide</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 AURA Studio. All rights reserved.</p>
+      <p>Crafted with intention.</p>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" id="cartClose">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <span>✦</span>
+        <p>Your cart is empty.</p>
+        <a href="#featured" class="btn-primary" onclick="closeCart()">Discover Pieces</a>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+      <button class="btn-primary full">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
